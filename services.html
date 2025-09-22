@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - FitLife Gym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-red-500">FitLife<span class="text-white">Gym</span></a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-red-500 transition duration-300">Home</a>
+                    <a href="about.html" class="text-white hover:text-red-500 transition duration-300">About</a>
+                    <a href="services.html" class="text-red-500 transition duration-300">Services</a>
+                    <a href="gallery.html" class="text-white hover:text-red-500 transition duration-300">Gallery</a>
+                    <a href="contact.html" class="text-white hover:text-red-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Home</a>
+                <a href="about.html" class="block py-2 text-white hover:text-red-500 transition duration-300">About</a>
+                <a href="services.html" class="block py-2 text-red-500 transition duration-300">Services</a>
+                <a href="gallery.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Gallery</a>
+                <a href="contact.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-cover bg-center py-20" style="background-image: url('https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
+            <p class="text-xl text-white max-w-3xl mx-auto">Discover our comprehensive range of fitness services designed to help you achieve your goals.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Comprehensive Fitness Solutions</h2>
+                <p class="text-gray-700 max-w-3xl mx-auto">At FitLife Gym, we offer a wide range of services to cater to all fitness levels and goals. Whether you're just starting your fitness journey or looking to take your training to the next level, we have the expertise and facilities to support you.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Personal Training" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Personal Training</h3>
+                        <p class="text-gray-700 mb-4">Our certified personal trainers will create a customized workout plan tailored to your specific goals, fitness level, and preferences. Benefit from one-on-one attention, expert guidance, and accountability.</p>
+                        <a href="contact.html" class="text-red-500 font-semibold hover:text-red-700 transition duration-300">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Group Classes" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Group Classes</h3>
+                        <p class="text-gray-700 mb-4">Join our energetic group fitness classes led by experienced instructors. From high-intensity interval training to yoga and Pilates, we offer a variety of classes to keep your workouts fun and effective.</p>
+                        <a href="contact.html" class="text-red-500 font-semibold hover:text-red-700 transition duration-300">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Nutrition Counseling" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nutrition Counseling</h3>
+                        <p class="text-gray-700 mb-4">Work with our nutrition specialists to develop a personalized meal plan that complements your fitness routine. Learn how to fuel your body properly for optimal performance and results.</p>
+                        <a href="contact.html" class="text-red-500 font-semibold hover:text-red-700 transition duration-300">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Strength Training" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Strength Training</h3>
+                        <p class="text-gray-700 mb-4">Build muscle, increase strength, and improve your overall fitness with our comprehensive strength training programs. Access state-of-the-art equipment and expert guidance.</p>
+                        <a href="contact.html" class="text-red-500 font-semibold hover:text-red-700 transition duration-300">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Cardio Training" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cardio Training</h3>
+                        <p class="text-gray-700 mb-4">Improve your cardiovascular health and endurance with our variety of cardio equipment and specialized training programs. Perfect for weight loss and heart health.</p>
+                        <a href="contact.html" class="text-red-500 font-semibold hover:text-red-700 transition duration-300">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1616279969856-759f559de54c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Fitness Assessment" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fitness Assessment</h3>
+                        <p class="text-gray-700 mb-4">Start your fitness journey with a comprehensive assessment of your current fitness level, body composition, and health metrics. Track your progress with regular follow-up assessments.</p>
+                        <a href="contact.html" class="text-red-500 font-semibold hover:text-red-700 transition duration-300">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Membership Plans</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                    <p class="text-gray-500 mb-4">Perfect for beginners</p>
+                    <p class="text-4xl font-bold text-red-500 mb-6">$29<span class="text-sm text-gray-500">/month</span></p>
+                    <ul class="text-left mb-8">
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Access to gym equipment</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Locker room access</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> 1 group class per week</li>
+                        <li class="mb-2 flex items-center text-gray-400"><span class="text-red-500 mr-2">✗</span> Personal trainer sessions</li>
+                        <li class="mb-2 flex items-center text-gray-400"><span class="text-red-500 mr-2">✗</span> Nutrition consultation</li>
+                    </ul>
+                    <a href="contact.html" class="block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Get Started</a>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform scale-105 border-2 border-red-500 hover:shadow-xl transition duration-300">
+                    <div class="bg-red-500 text-white py-1 px-4 rounded-full inline-block mb-4">Most Popular</div>
+                    <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                    <p class="text-gray-500 mb-4">For dedicated fitness enthusiasts</p>
+                    <p class="text-4xl font-bold text-red-500 mb-6">$59<span class="text-sm text-gray-500">/month</span></p>
+                    <ul class="text-left mb-8">
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Access to gym equipment</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Locker room access</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Unlimited group classes</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> 2 personal trainer sessions/month</li>
+                        <li class="mb-2 flex items-center text-gray-400"><span class="text-red-500 mr-2">✗</span> Nutrition consultation</li>
+                    </ul>
+                    <a href="contact.html" class="block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Get Started</a>
+                </div>
+                
+                <!-- Elite Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Elite</h3>
+                    <p class="text-gray-500 mb-4">The complete fitness package</p>
+                    <p class="text-4xl font-bold text-red-500 mb-6">$99<span class="text-sm text-gray-500">/month</span></p>
+                    <ul class="text-left mb-8">
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Access to gym equipment</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Locker room access</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Unlimited group classes</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> 4 personal trainer sessions/month</li>
+                        <li class="mb-2 flex items-center"><span class="text-green-500 mr-2">✓</span> Nutrition consultation</li>
+                    </ul>
+                    <a href="contact.html" class="block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Schedule -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Class Schedule</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Time</th>
+                            <th class="py-3 px-4 text-left">Monday</th>
+                            <th class="py-3 px-4 text-left">Tuesday</th>
+                            <th class="py-3 px-4 text-left">Wednesday</th>
+                            <th class="py-3 px-4 text-left">Thursday</th>
+                            <th class="py-3 px-4 text-left">Friday</th>
+                            <th class="py-3 px-4 text-left">Saturday</th>
+                            <th class="py-3 px-4 text-left">Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">6:00 AM</td>
+                            <td class="py-3 px-4">Spin Class</td>
+                            <td class="py-3 px-4">HIIT</td>
+                            <td class="py-3 px-4">Spin Class</td>
+                            <td class="py-3 px-4">HIIT</td>
+                            <td class="py-3 px-4">Spin Class</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">-</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-3 px-4 font-semibold">9:00 AM</td>
+                            <td class="py-3 px-4">Yoga</td>
+                            <td class="py-3 px-4">Pilates</td>
+                            <td class="py-3 px-4">Yoga</td>
+                            <td class="py-3 px-4">Pilates</td>
+                            <td class="py-3 px-4">Yoga</td>
+                            <td class="py-3 px-4">Yoga</td>
+                            <td class="py-3 px-4">Pilates</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">12:00 PM</td>
+                            <td class="py-3 px-4">Body Pump</td>
+                            <td class="py-3 px-4">Zumba</td>
+                            <td class="py-3 px-4">Body Pump</td>
+                            <td class="py-3 px-4">Zumba</td>
+                            <td class="py-3 px-4">Body Pump</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">-</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-3 px-4 font-semibold">5:30 PM</td>
+                            <td class="py-3 px-4">Kickboxing</td>
+                            <td class="py-3 px-4">CrossFit</td>
+                            <td class="py-3 px-4">Kickboxing</td>
+                            <td class="py-3 px-4">CrossFit</td>
+                            <td class="py-3 px-4">Kickboxing</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">-</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">7:00 PM</td>
+                            <td class="py-3 px-4">HIIT</td>
+                            <td class="py-3 px-4">Yoga</td>
+                            <td class="py-3 px-4">HIIT</td>
+                            <td class="py-3 px-4">Yoga</td>
+                            <td class="py-3 px-4">HIIT</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-gray-700 mb-4">Class schedule is subject to change. Please check with the front desk for the most up-to-date information.</p>
+                <a href="contact.html" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Book a Class</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="flex justify-between items-center w-full p-4 text-left font-semibold">
+                        <span>What should I bring to my first workout?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="p-4 pt-0 border-t border-gray-200">
+                        <p class="text-gray-700">We recommend bringing comfortable workout clothes, athletic shoes, a water bottle, and a towel. Lockers are available for storing your personal belongings during your workout.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="flex justify-between items-center w-full p-4 text-left font-semibold">
+                        <span>Do I need to be fit to join the gym?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="p-4 pt-0 border-t border-gray-200">
+                        <p class="text-gray-700">Not at all! FitLife Gym welcomes members of all fitness levels. Our trainers will help you create a workout plan that suits your current fitness level and helps you progress at your own pace.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="flex justify-between items-center w-full p-4 text-left font-semibold">
+                        <span>Can I cancel my membership at any time?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="p-4 pt-0 border-t border-gray-200">
+                        <p class="text-gray-700">Yes, you can cancel your membership at any time with a 30-day notice. Please visit the front desk or contact our customer service team to initiate the cancellation process.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="flex justify-between items-center w-full p-4 text-left font-semibold">
+                        <span>Are there any age restrictions?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="p-4 pt-0 border-t border-gray-200">
+                        <p class="text-gray-700">Members must be at least 16 years old to join. Members aged 16-17 require parental consent and may have limited access to certain areas and equipment for safety reasons.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="flex justify-between items-center w-full p-4 text-left font-semibold">
+                        <span>How do I book a personal training session?</span>
+                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="p-4 pt-0 border-t border-gray-200">
+                        <p class="text-gray-700">You can book a personal training session at the front desk, through our mobile app, or by contacting your preferred trainer directly. We recommend booking at least 24 hours in advance to ensure availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Your Fitness Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join FitLife Gym today and take the first step towards a healthier, stronger you. Our team is ready to support you every step of the way.</p>
+            <a href="contact.html" class="bg-white text-red-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Column 1: Logo and Description -->
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-red-500 mb-4 inline-block">FitLife<span class="text-white">Gym</span></a>
+                    <p class="text-gray-400 mb-4">Your premier fitness destination with state-of-the-art equipment, expert trainers, and a supportive community.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition duration-300">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Personal Training</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Group Classes</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Nutrition Counseling</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Fitness Assessment</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Weight Loss Programs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-red-500"></i>
+                            <span class="text-gray-400">123 Fitness Street, Cityville, State 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-red-500"></i>
+                            <span class="text-gray-400">(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-red-500"></i>
+                            <span class="text-gray-400">info@fitlifegym.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-red-500"></i>
+                            <span class="text-gray-400">Open 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="text-center text-gray-400">
+                <p>&copy; 2023 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
