@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitLife Gym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-red-500">FitLife<span class="text-white">Gym</span></a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-red-500 transition duration-300">Home</a>
+                    <a href="about.html" class="text-white hover:text-red-500 transition duration-300">About</a>
+                    <a href="services.html" class="text-white hover:text-red-500 transition duration-300">Services</a>
+                    <a href="gallery.html" class="text-white hover:text-red-500 transition duration-300">Gallery</a>
+                    <a href="contact.html" class="text-red-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Home</a>
+                <a href="about.html" class="block py-2 text-white hover:text-red-500 transition duration-300">About</a>
+                <a href="services.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Services</a>
+                <a href="gallery.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Gallery</a>
+                <a href="contact.html" class="block py-2 text-red-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-cover bg-center py-20" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+            <p class="text-xl text-white max-w-3xl mx-auto">Get in touch with our team for any inquiries or to start your fitness journey today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Contact Card 1 -->
+                <div class="bg-gray-100 p-8 rounded-lg text-center shadow-md hover:shadow-lg transition duration-300">
+                    <div class="inline-block p-4 bg-red-600 text-white rounded-full mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Our Location</h3>
+                    <p class="text-gray-700">123 Fitness Street, Cityville, State 12345</p>
+                </div>
+                
+                <!-- Contact Card 2 -->
+                <div class="bg-gray-100 p-8 rounded-lg text-center shadow-md hover:shadow-lg transition duration-300">
+                    <div class="inline-block p-4 bg-red-600 text-white rounded-full mb-4">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Phone Number</h3>
+                    <p class="text-gray-700">(123) 456-7890</p>
+                </div>
+                
+                <!-- Contact Card 3 -->
+                <div class="bg-gray-100 p-8 rounded-lg text-center shadow-md hover:shadow-lg transition duration-300">
+                    <div class="inline-block p-4 bg-red-600 text-white rounded-full mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email Address</h3>
+                    <p class="text-gray-700">info@fitlifegym.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps and Contact Form -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Google Maps -->
+                <div class="rounded-lg overflow-hidden shadow-lg h-96">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573036935!2d-73.98784492439748!3d40.75798597138946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                                <option value="">Select a subject</option>
+                                <option value="membership">Membership Inquiry</option>
+                                <option value="personalTraining">Personal Training</option>
+                                <option value="groupClasses">Group Classes</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" id="consent" name="consent" class="mt-1 mr-2" required>
+                            <label for="consent" class="text-gray-700">I agree to the <a href="#" class="text-red-600 hover:underline">Privacy Policy</a> and consent to being contacted by FitLife Gym.</label>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Business Hours</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Gym Hours</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span class="font-medium">Monday - Friday:</span>
+                                <span>5:00 AM - 11:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Saturday:</span>
+                                <span>6:00 AM - 10:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Sunday:</span>
+                                <span>7:00 AM - 9:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Holidays:</span>
+                                <span>8:00 AM - 8:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Front Desk Hours</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span class="font-medium">Monday - Friday:</span>
+                                <span>7:00 AM - 9:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Saturday:</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Sunday:</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="font-medium">Holidays:</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-xl font-bold">How do I become a member?</h3>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-700">You can become a member by visiting our gym during front desk hours, filling out the contact form on this page, or calling our membership team. We offer various membership options to suit your needs and goals.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-xl font-bold">Do you offer free trials?</h3>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-700">Yes, we offer a 3-day free trial for new members. This allows you to experience our facilities, classes, and services before committing to a membership. Contact us to schedule your free trial today.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-xl font-bold">What amenities are included with membership?</h3>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-700">Our standard membership includes access to all workout areas, locker rooms with showers, and basic fitness classes. Premium memberships include additional benefits such as personal training sessions, specialized classes, and nutrition consultations.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left">
+                        <h3 class="text-xl font-bold">How do I schedule a personal training session?</h3>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-700">You can schedule a personal training session by contacting our front desk, using our mobile app, or speaking directly with one of our trainers. We recommend booking at least 24 hours in advance to ensure availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Your Fitness Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join FitLife Gym today and take the first step towards a healthier, stronger you. Our team is ready to support you every step of the way.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="services.html" class="bg-white text-red-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">View Memberships</a>
+                <a href="#contactForm" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Column 1: Logo and Description -->
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-red-500 mb-4 inline-block">FitLife<span class="text-white">Gym</span></a>
+                    <p class="text-gray-400 mb-4">Your premier fitness destination with state-of-the-art equipment, expert trainers, and a supportive community.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition duration-300">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Personal Training</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Group Classes</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Nutrition Counseling</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Fitness Assessment</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Weight Loss Programs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-red-500"></i>
+                            <span class="text-gray-400">123 Fitness Street, Cityville, State 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-red-500"></i>
+                            <span class="text-gray-400">(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-red-500"></i>
+                            <span class="text-gray-400">info@fitlifegym.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-red-500"></i>
+                            <span class="text-gray-400">Open 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="text-center text-gray-400">
+                <p>&copy; 2023 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
