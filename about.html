@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FitLife Gym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-red-500">FitLife<span class="text-white">Gym</span></a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-red-500 transition duration-300">Home</a>
+                    <a href="about.html" class="text-red-500 transition duration-300">About</a>
+                    <a href="services.html" class="text-white hover:text-red-500 transition duration-300">Services</a>
+                    <a href="gallery.html" class="text-white hover:text-red-500 transition duration-300">Gallery</a>
+                    <a href="contact.html" class="text-white hover:text-red-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Home</a>
+                <a href="about.html" class="block py-2 text-red-500 transition duration-300">About</a>
+                <a href="services.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Services</a>
+                <a href="gallery.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Gallery</a>
+                <a href="contact.html" class="block py-2 text-white hover:text-red-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-cover bg-center py-20" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About FitLife Gym</h1>
+            <p class="text-xl text-white max-w-3xl mx-auto">Learn about our mission, our story, and the dedicated team behind FitLife Gym.</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="Gym Interior" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <p class="text-gray-700 mb-4">FitLife Gym was founded in 2010 with a simple mission: to create a fitness community where everyone feels welcome and empowered to achieve their health and fitness goals.</p>
+                    <p class="text-gray-700 mb-4">What started as a small local gym has grown into a premier fitness destination, known for our state-of-the-art equipment, expert trainers, and supportive community atmosphere.</p>
+                    <p class="text-gray-700 mb-4">Over the years, we've helped thousands of members transform their lives through fitness. We believe that fitness is not just about physical strength, but also about mental well-being and building a healthier lifestyle.</p>
+                    <p class="text-gray-700">Today, FitLife Gym continues to evolve and grow, always staying true to our core values of inclusivity, excellence, and community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Mission</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-xl text-gray-700 mb-8">At FitLife Gym, our mission is to inspire and empower individuals to transform their lives through fitness, providing a supportive environment where everyone can achieve their personal health and wellness goals.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <!-- Value 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Passion</h3>
+                        <p class="text-gray-700">We are passionate about fitness and helping our members achieve their goals.</p>
+                    </div>
+                    
+                    <!-- Value 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Community</h3>
+                        <p class="text-gray-700">We foster a supportive community where everyone feels welcome and motivated.</p>
+                    </div>
+                    
+                    <!-- Value 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Excellence</h3>
+                        <p class="text-gray-700">We strive for excellence in everything we do, from our facilities to our services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="John Smith" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">John Smith</h3>
+                        <p class="text-red-500 mb-4">Founder & Head Trainer</p>
+                        <p class="text-gray-700 mb-4">John has over 15 years of experience in fitness training and is certified in multiple disciplines.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="Sarah Johnson" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sarah Johnson</h3>
+                        <p class="text-red-500 mb-4">Nutrition Specialist</p>
+                        <p class="text-gray-700 mb-4">Sarah is a certified nutritionist with expertise in creating personalized meal plans for fitness goals.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="Mike Thompson" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mike Thompson</h3>
+                        <p class="text-red-500 mb-4">Strength Coach</p>
+                        <p class="text-gray-700 mb-4">Mike specializes in strength training and powerlifting, helping members build muscle and strength.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Lisa Chen" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lisa Chen</h3>
+                        <p class="text-red-500 mb-4">Yoga & Pilates Instructor</p>
+                        <p class="text-gray-700 mb-4">Lisa is a certified yoga and Pilates instructor with a focus on mindfulness and flexibility training.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Achievements</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Achievement 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-red-500 text-4xl font-bold mb-2">10+</div>
+                    <p class="text-xl font-semibold">Years of Experience</p>
+                </div>
+                
+                <!-- Achievement 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-red-500 text-4xl font-bold mb-2">5,000+</div>
+                    <p class="text-xl font-semibold">Happy Members</p>
+                </div>
+                
+                <!-- Achievement 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-red-500 text-4xl font-bold mb-2">20+</div>
+                    <p class="text-xl font-semibold">Expert Trainers</p>
+                </div>
+                
+                <!-- Achievement 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-red-500 text-4xl font-bold mb-2">15+</div>
+                    <p class="text-xl font-semibold">Fitness Awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Become a part of the FitLife family and start your fitness journey today. Our team is ready to support you every step of the way.</p>
+            <a href="contact.html" class="bg-white text-red-600 hover:bg-gray-200 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Column 1: Logo and Description -->
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-red-500 mb-4 inline-block">FitLife<span class="text-white">Gym</span></a>
+                    <p class="text-gray-400 mb-4">Your premier fitness destination with state-of-the-art equipment, expert trainers, and a supportive community.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition duration-300">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Personal Training</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Group Classes</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Nutrition Counseling</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Fitness Assessment</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Weight Loss Programs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-red-500"></i>
+                            <span class="text-gray-400">123 Fitness Street, Cityville, State 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-red-500"></i>
+                            <span class="text-gray-400">(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-red-500"></i>
+                            <span class="text-gray-400">info@fitlifegym.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-red-500"></i>
+                            <span class="text-gray-400">Open 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="text-center text-gray-400">
+                <p>&copy; 2023 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
